@@ -80,13 +80,13 @@
                 for (let id in selectedProduct) {
                     if (selectedProduct[id].quantity > 0) {
                         element += `<li id="${id}">
-                                      <img src="${selectedProduct[id].img}"><br />
-                    <span class="product-name">${selectedProduct[id].productName}</span><br />
-                    <span class="cost">${selectedProduct[id].cost}$</span><br />
-                    <label>Quantity:</label>
-                                      <input type="number" min="1" max="100" value="${selectedProduct[id].quantity}">
-                                      <button class="delete"><i class="far fa-times-circle"></i> Delete</button>
-                                  </li>`;
+                            <img src="${selectedProduct[id].img}"><br />
+                            <span class="product-name">${selectedProduct[id].productName}</span><br />
+                            <span class="cost">${selectedProduct[id].cost}$</span><br />
+                            <label>Quantity:</label>
+                            <input type="number" min="1" max="100" value="${selectedProduct[id].quantity}">
+                            <button class="delete"><i class="far fa-times-circle"></i> Delete</button>
+                        </li>`;
                     }
                 }
                 products.html(element);
