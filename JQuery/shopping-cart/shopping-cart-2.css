@@ -1,0 +1,114 @@
+body {
+    font-family: "Tahoma";
+    background-image: url("https://i.gifer.com/3BBK.gif");
+}
+
+.cost {
+    font-family: fantasy;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.total {
+    font-family: fantasy;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.summary {
+    background-color: #eee;
+    border-radius: 20px;
+    width: 90%;
+    margin: 2% auto;
+    padding: 20px 30px;
+}
+
+.summary h1 {
+    font-family: fantasy;
+    font-size: 44px;
+    text-align: center;
+    margin: 0;
+}
+
+.summary a {
+    text-decoration: none;
+    color: #000;
+}
+
+.summary h1 img {
+    width: 40px;
+}
+
+.summary .total-cart,
+.summary .total-cost {
+    font-size: 22px;
+    margin: 15px auto;
+}
+
+.summary .update-cart {
+    width: 80px;
+    height: 30px;
+}
+
+.products {
+    display: flex;
+    flex-flow: wrap;
+    margin: auto;
+    padding: 0;
+}
+
+.products li {
+    border: 1px solid #eee;
+    border-radius: 20px;
+    text-align: center;
+    width: 35%;
+    margin: 10px auto 20px auto;
+    padding: 10px;
+}
+
+.products img {
+    width: 60%;
+}
+
+.products .option-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.product-name {
+    font-size: 28px;
+}
+
+input {
+    text-align: center;
+    border-top: none;
+    border-bottom: 2px solid #aaa;
+    border-right: none;
+    border-left: none;
+    width: 40px;
+    height: 12px;
+    padding: 5px;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+    margin-top: 5px;
+    padding: 3px 7px;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s;
+    cursor: pointer;
+}

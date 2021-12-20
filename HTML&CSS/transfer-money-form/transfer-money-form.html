@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Transfer Money Form</title>
+
+    <link href="https://avatars.githubusercontent.com/u/59163484?s=200&v=4" rel="shortcut icon" />
+    <link rel="stylesheet" href="transfer-money-form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="transfer-form">
+        <ul>
+            <li>
+                <span class="active">1</span><br />
+                <span>Khởi tạo</span>
+            </li>
+            <li>
+                <span>2</span><br />
+                <span>Xác nhận</span>
+            </li>
+            <li>
+                <span>3</span><br />
+                <span>Xác thực</span>
+            </li>
+            <li>
+                <span>4</span><br />
+                <span>Kết quả</span>
+            </li>
+        </ul>
+        <div class="line"></div>
+        <div class="type">
+            <label for="transfer-method">Hình thức chuyển</label>
+            <select id="transfer-method" name="transfer-method">
+                <option value="0">Chuyển tiền ngay giá trị hiện tại</option>
+            </select>
+        </div>
+        <a class="description" href="#" title="Mô tả">Mô tả và một số lưu ý đối với tính năng chuyển tiền
+            <span>?</span></a>
+        <div class="type">
+            <label for="source-account">Tài khoản nguồn</label>
+            <select id="source-account" name="source-account">
+                <option value="9999999999999">9999999999999 - VND</option>
+            </select>
+            <p>Số dư khả dụng</p>
+            <span>1,112,425,641 VND</span>
+        </div>
+    </div>
+</body>
+
+</html>

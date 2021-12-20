@@ -1,0 +1,81 @@
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    color: #5d5d5d;
+}
+
+table.list-cars {
+    width: 400px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid #aaa;
+    margin: 20px auto;
+    animation: growth linear 0.3s;
+    --growth-from: 0;
+    --growth-to: 1;
+}
+
+th {
+    font-weight: bold;
+    color: black;
+    background-color: #ccc;
+}
+
+th,
+td {
+    border-right: 1px solid #aaa;
+    padding: 10px 25px;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+ul.list-cars {
+    width: 400px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    margin: 20px auto;
+    padding: 0;
+}
+
+ul.list-cars li {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+}
+
+ul.list-cars li:first-child {
+    font-weight: bold;
+    background-color: #ccc;
+    color: black;
+}
+
+ul.list-cars li:nth-child(even) {
+    background-color: #eee;
+}
+
+ul.list-cars li span {
+    padding: 10px;
+    border-left: 1px solid #aaa;
+    width: 100%;
+    margin: 0;
+}
+
+ul.list-cars li span:last-child {
+    border-right: 1px solid #aaa;
+}

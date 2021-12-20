@@ -1,0 +1,75 @@
+body {
+    font-family: "Courier New", monospace;
+    background-image: url("https://i.gifer.com/3BBK.gif");
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    background-color: #aaa;
+    color: #fff;
+}
+
+.container {
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+}
+
+.slider {
+    display: flex;
+    transition: transform 2s ease-in-out;
+}
+
+img {
+    width: 100%;
+}
+
+.direction {
+    text-align: center;
+    margin: 10px auto;
+}
+
+#prev,
+#next {
+    font-size: 10px;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    width: auto;
+    padding: 5px 15px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#prev:hover,
+#next:hover {
+    background-color: #000;
+    color: #fff;
+    opacity: 1;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    margin: auto;
+}
+
+.pageElement {
+    background-color: #000;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    opacity: 0.3;
+}
+
+.activePage {
+    background-color: #000;
+    opacity: 1;
+}

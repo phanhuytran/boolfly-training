@@ -1,0 +1,268 @@
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3c948b;
+    border: 2px solid #3c948b;
+    border-radius: 10px;
+}
+
+body {
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    background-image: url("https://i.gifer.com/3BBK.gif");
+}
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #3f3f3f;
+    margin-bottom: 2%;
+    padding: 30px 60px;
+}
+
+.header img {
+    width: 140px;
+    margin-right: 3%;
+}
+
+.header input {
+    font-size: 16px;
+    width: 40%;
+    border: 1px solid #aaa;
+    border-radius: 20px 0 0 20px;
+    padding: 10px;
+}
+
+.header input:focus-visible {
+    outline: 1px auto #3c948b;
+}
+
+.header input:focus {
+    width: 50%;
+    transition: 0.8s;
+}
+
+.btn-submit {
+    font-size: 16px;
+    background-color: #3c948b;
+    color: #fff;
+    border: 1px solid #3c948b;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+.btn-submit:hover {
+    background-color: #fff;
+    color: #3c948b;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-submit {
+    padding: 12px 25px;
+    border-radius: 0 20px 20px 0 !important;
+}
+
+.btn-back {
+    font-size: 22px;
+    background: none;
+    color: #000;
+    border: none;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.btn-back:hover {
+    color: #3c948b;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.field {
+    width: 90%;
+    margin: auto;
+    padding: 10px 40px;
+}
+
+.result {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.result-item {
+    word-wrap: break-word;
+    width: 100%;
+    height: 270px;
+    margin: 15px auto 20px auto;
+}
+
+.result-item a.title {
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.result-item img {
+    display: block;
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.result-item img:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
+.movie-detail {
+    font-size: 18px !important;
+}
+
+.content {
+    display: inline-flex;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.general {
+    width: 65%;
+}
+
+.details {
+    width: 35%;
+    background-color: #eee;
+    height: fit-content;
+    padding: 15px;
+    word-break: break-word;
+}
+
+.movie-image {
+    width: 30%;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+}
+
+.description {
+    text-align: justify;
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+    padding-right: 15px;
+}
+
+p {
+    margin: 0;
+}
+
+.text {
+    font-size: 28px;
+    margin: 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+dl.detail-list {
+    margin: 5px 0;
+}
+
+dl.detail-list dt {
+    display: inline-block;
+    font-weight: bold;
+    vertical-align: top;
+    width: 40%;
+    padding: 5px 0;
+}
+
+dl.detail-list dd {
+    display: inline-block;
+    width: 60%;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.menu ul {
+    display: inline-flex;
+    list-style-type: none;
+    margin: 15px 0;
+    padding: 0;
+}
+
+.active {
+    background-color: #3f3f3f;
+    color: white !important;
+}
+
+.link {
+    text-decoration: none;
+    text-align: center;
+    color: #959595;
+    margin-right: 5px;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+.link:hover {
+    background-color: #71c5bd;
+    color: white;
+}
+
+.cast-content {
+    display: block;
+}
+
+.cast-item {
+    display: inline-flex;
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+.img-cast {
+    width: 150px;
+    height: 200px;
+}
+
+.cast-info {
+    padding: 5px 10px;
+}
+
+.cast-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: #3c948b;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #245e58;
+}
+
+.go-to-top {
+    position: fixed;
+    right: 1.5%;
+    bottom: 10%;
+}
+
+.go-to-top a>img {
+    display: block;
+    width: 20px;
+    opacity: 0.8;
+}
+
+.go-to-top a>img:hover {
+    width: 25px;
+    opacity: 1;
+    transition: 0.5s;
+}

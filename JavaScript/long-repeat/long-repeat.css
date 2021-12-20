@@ -1,0 +1,78 @@
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
+body {
+    display: flex;
+    font-family: "Courier New", monospace;
+    background-image: url("https://pbs.twimg.com/media/DfU8ff_XkAEkWRz.jpg:large");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    opacity: 0.85;
+    border-radius: 10px;
+    width: 70%;
+    padding: 2% 5%;
+    animation: growth linear 0.3s;
+    --growth-from: 0;
+    --growth-to: 1;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+input {
+    width: 60%;
+    border: 1px solid #999;
+    border-radius: 15px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button {
+    background-color: black;
+    color: #fff;
+    border: 1px solid #999;
+    border-radius: 15px;
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff;
+    color: black;
+}
+
+p {
+    margin: 2px;
+}
+
+#result {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.wrap-result {
+    margin-top: 30px;
+}
+
+#error-message {
+    color: #e50000;
+    margin: -2px 0 15px;
+}

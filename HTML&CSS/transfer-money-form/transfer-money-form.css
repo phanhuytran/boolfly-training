@@ -1,0 +1,131 @@
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
+body {
+    display: flex;
+    font-family: Tahoma;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.transfer-form {
+    background-color: #03191e;
+    width: 60%;
+    height: auto;
+    padding: 25px;
+    animation: growth linear 0.3s;
+    --growth-from: 0;
+    --growth-to: 1;
+}
+
+.transfer-form ul {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    width: 104%;
+    padding: 0;
+    animation: growth linear 0.6s;
+    --growth-from: 0;
+    --growth-to: 1;
+}
+
+.transfer-form ul li {
+    list-style-type: none;
+    margin: 10px 0 0 -12px;
+}
+
+.transfer-form ul li .active {
+    font-weight: bold;
+    background-color: #79b71a !important;
+}
+
+.transfer-form ul li span:first-child {
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #aaa;
+    width: 30px;
+    height: 30px;
+    background-color: #1e2c2b;
+    margin: auto;
+    padding: 1px 7.5px 3px;
+}
+
+.transfer-form ul li span:last-child {
+    display: inline-block;
+    margin: 15px 0 0 -15px;
+}
+
+.line {
+    border: 1px solid #aaa;
+    background-color: #aaa;
+    width: 78%;
+    margin-top: -60px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.type {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    border-radius: 10px;
+    width: 80%;
+    height: auto;
+    margin: 70px auto 0;
+    padding: 15px 20px;
+    background-color: #1e2c2b;
+    color: #dbe9ee;
+    animation: growth linear 0.6s;
+    --growth-from: 0;
+    --growth-to: 1;
+}
+
+.type label {
+    margin-top: 15px;
+}
+
+.type select {
+    font-weight: bold;
+    height: 48px;
+    border-radius: 5px;
+    color: green;
+    padding: 0 10px;
+}
+
+.description {
+    font-size: 1rem;
+    float: right;
+    text-decoration: none;
+    margin-right: 5.5%;
+    padding: 15px;
+    color: #79b71a;
+    animation: growth linear 0.6s;
+    --growth-from: 0;
+    --growth-to: 1;
+}
+
+.description span {
+    font-size: 12px;
+    border: 1px solid #79b71a;
+    border-radius: 50%;
+    padding: 0 5px;
+}
+
+.type span {
+    margin-top: 15px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+    .description {
+        margin-right: 0;
+        padding-bottom: 25px;
+    }
+}

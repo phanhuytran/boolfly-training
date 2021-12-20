@@ -1,0 +1,58 @@
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
+body {
+    font-family: "Courier New", monospace;
+    background-image: url("https://i.gifer.com/3BBK.gif");
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    margin: 20px auto;
+    animation: growth linear 0.3s;
+    --growth-from: 0;
+    --growth-to: 1;
+}
+
+.image-lazy {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.image-lazy img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 1%;
+    animation: growth linear 0.6s;
+    --growth-from: 0;
+    --growth-to: 1;
+}
+
+.go-to-top {
+    position: fixed;
+    right: 1.5%;
+    bottom: 10%;
+}
+
+.go-to-top a>img {
+    display: block;
+    width: 20px;
+    opacity: 0.8;
+}
+
+.go-to-top a>img:hover {
+    width: 25px;
+    opacity: 1;
+    transition: 0.5s;
+}

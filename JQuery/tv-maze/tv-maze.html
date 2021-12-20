@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TV Maze</title>
+
+    <link href="https://avatars.githubusercontent.com/u/59163484?s=200&v=4" rel="shortcut icon" />
+    <link rel="stylesheet" href="tv-maze.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="tv-maze.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://static.tvmaze.com/images/tvm-header-logo.png" alt="logo" />
+            <input type="text" id="input-search" name="input-search" placeholder="Search Shows and People..." />
+            <button class="btn-submit"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="field result hidden"></div>
+        <div class="field information hidden">
+            <button class="btn-back"><i class="fas fa-long-arrow-alt-left"></i></button>
+            <h1 class="title text"></h1>
+            <nav class="menu">
+                <ul>
+                    <li><a class="link active" href="#" title="main">Main</a></li>
+                    <li><a class="link" href="#" title="cast">Cast</a></li>
+                </ul>
+            </nav>
+            <div class="content main-content">
+                <div class="general">
+                    <div class="movie-image">
+                        <img src="#" title="#" alt="#" />
+                    </div>
+                    <div class="description"></div>
+                </div>
+                <div class="details">
+                    <h2 class="text">Show Info</h2>
+                    <div class="detail">
+                        <dl class="detail-list"></dl>
+                    </div>
+                </div>
+            </div>
+            <div class="content cast-content hidden"></div>
+        </div>
+        <div class="go-to-top">
+            <a href="#top"><img
+                    src="https://github.com/phanhuytran/DesignWebsite_IeltsMentor/blob/main/Picture/top.png?raw=true" /></a>
+        </div>
+    </div>
+</body>
+
+</html>
