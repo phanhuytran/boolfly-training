@@ -85,7 +85,7 @@
                     <span class="cost">${selectedProduct[id].cost}$</span><br />
                     <label>Quantity:</label>
                                       <input type="number" min="1" max="100" value="${selectedProduct[id].quantity}">
-                                      <button class="delete">Delete</button>
+                                      <button class="delete"><i class="far fa-times-circle"></i> Delete</button>
                                   </li>`;
                     }
                 }
